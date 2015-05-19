@@ -1,0 +1,51 @@
+/* PHASE 1: Header */
+.header {
+  background: red;
+  height: 39px;
+  color: white;
+}
+
+h1.left-section {
+  display: inline-block;
+  margin: 0;
+  height: 100%;
+}
+
+ul.right-section {
+  margin: 0;
+}
+
+nav.main-nav {
+  width: 900px;
+  height: 100%;
+  margin: 0 auto 0 auto;
+  border-left: 1px solid rgb(238, 238, 238);
+  border-right: 1px solid rgb(238, 238, 238);
+}
+
+.main-nav > ul {
+  display: inline-block;
+  float: right;
+  height: 100%;
+  padding: 0px;
+}
+
+.main-nav li {
+  display: inline-block;
+  font-size: 16px;
+  vertical-align: middle;
+  padding: 11px 20px 10px 20px;
+}
+
+.main-nav li:hover {
+  background: black;
+  cursor: pointer;
+}
+
+.left-section > li {
+  border-right: 1px solid rgb(238, 238, 238);
+}
+
+.right-section > li {
+  border-left: 1px solid rgb(238, 238, 238);
+}
