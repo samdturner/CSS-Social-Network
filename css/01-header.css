@@ -250,8 +250,9 @@ button.add-friend:hover {
 
 .profile-picture {
   position: relative;
-  overflow: visible;
+  overflow: hidden;
   margin-top: -120px;
+  display: block;
 }
 
 .profile-picture > img {
@@ -259,7 +260,6 @@ button.add-friend:hover {
   overflow: visible;
   border: black solid 1px;
   border-radius: 8px;
-  margin-top: -120px;
 }
 
 .summary {
@@ -284,4 +284,19 @@ button.add-friend:hover {
   padding: 6px 0 6px 5px;
   display: inline-block;
   font-weight: bold;
+}
+
+.online {
+  z-index: 102;
+  background: #0c0;
+  color: #fff;
+  box-shadow: 0 1px 0 0 #070;
+  position: absolute;
+  top: 17px;
+  display: block;
+  padding: 3px 25px;
+  font-size: 12px;
+  transform: rotate(-45deg);
+  left: -28px;
+  letter-spacing: 3px;
 }
