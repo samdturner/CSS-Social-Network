@@ -90,6 +90,7 @@ nav.main-nav {
   left: -1px;
   white-space: nowrap;
   visibility: hidden;
+  z-index: 2;
 }
 
 .notification-element:hover > .drop-down {
@@ -152,4 +153,95 @@ nav.main-nav {
   float: left;
   min-height: 200px;
   padding: 20px;
+}
+
+footer {
+  height: 56px;
+  margin: 0 auto 0 auto;
+  background: white;
+  width: 900px;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  overflow: hidden;
+  font-family: Roboto;
+  color: rgb(170, 170, 170);
+  font-size: 0.85em;
+}
+
+.copy-right {
+  float: left;
+}
+
+.footer-buttons-group {
+  float: right;
+}
+
+.footer-buttons-group > li {
+  display: inline-block;
+}
+
+footer > small.copy-right {
+  padding: 20px;
+}
+
+ul.footer-buttons-group {
+  padding: 21px 12px 21px 12px;
+}
+
+ul.footer-buttons-group > li > a {
+  padding: 0 10px 0 10px;
+}
+
+ul.footer-buttons-group > li > a:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.cover-photo {
+  position: relative;
+  height: 200px;
+  width: 900px;
+  margin: 0 auto 0 auto;
+  z-index: 3;
+  overflow: hidden;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.cover-photo > img {
+  position: relative;
+  top: -100px;
+}
+
+button.add-friend {
+  position: absolute;
+  z-index: 100;
+  width: 110px;
+  bottom: 20px;
+  right: 20px;
+  height: 35px;
+  border-radius: 6px;
+  border: 1px solid black;
+  font-size: 15px;
+  font-weight: bold;
+  background: #fff;
+}
+
+button.add-friend:hover {
+  background: #eee;
+}
+
+.cover-photo > h1 {
+  z-index: 100;
+  position: absolute;
+  left: 240px;
+  color: white;
+  font-size: 36px;
+  font-weight: 300;
+  text-shadow: #000 0 0 10px;
+  bottom: 20px;
+  line-height: 1;
 }
