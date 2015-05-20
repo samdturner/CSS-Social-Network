@@ -146,6 +146,8 @@ nav.main-nav {
   float: left;
   min-height: 200px;
   padding: 20px;
+  overflow: visible;
+  z-index: 5;
 }
 
 .content-main {
@@ -205,7 +207,7 @@ ul.footer-buttons-group > li > a:hover {
   height: 200px;
   width: 900px;
   margin: 0 auto 0 auto;
-  z-index: 3;
+  z-index: 0;
   overflow: hidden;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
@@ -244,4 +246,42 @@ button.add-friend:hover {
   text-shadow: #000 0 0 10px;
   bottom: 20px;
   line-height: 1;
+}
+
+.profile-picture {
+  position: relative;
+  overflow: visible;
+  margin-top: -120px;
+}
+
+.profile-picture > img {
+  z-index: 101;
+  overflow: visible;
+  border: black solid 1px;
+  border-radius: 8px;
+  margin-top: -120px;
+}
+
+.summary {
+  margin: 20px 0;
+}
+
+.profile-nav {
+  border-top: 1px solid #ccc;
+  padding: 0;
+}
+
+.profile-nav > li:hover {
+  background: #eee;
+  cursor: pointer;
+}
+
+.profile-nav > li {
+  border-bottom: 1px solid #ccc;
+}
+
+.profile-nav a {
+  padding: 6px 0 6px 5px;
+  display: inline-block;
+  font-weight: bold;
 }
