@@ -255,7 +255,9 @@ button.add-friend:hover {
   display: block;
 }
 
-.profile-picture > img, .thumbnails img {
+.profile-picture > img,
+.thumbnails img,
+.thumbnail > img {
   z-index: 101;
   overflow: visible;
   border: black solid 1px;
@@ -306,7 +308,7 @@ button.add-friend:hover {
   padding: 0;
 }
 
-.thumbnails > li {
+.thumbnails > li, .thumbnail > img {
   float: left;
   height: 58px;
   width: 58px;
@@ -359,4 +361,64 @@ a.name-tag {
   transform: translateY(-50%);
   left: 25px;
   z-index: -1;
+}
+
+.form-fieldset {
+  background: #eee;
+  width: 499px;
+  margin: 0 0 0 20px;
+  float: left;
+  padding: 19px;
+}
+
+.form-fieldset, input.post-title, textarea.post-body {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input {
+  margin-bottom: 20px;
+}
+
+div.input > label {
+  display: block;
+  font-weight: 700;
+  padding: 0 0 5px 0;
+}
+
+input.post-title, textarea.post-body {
+  width: calc(100% - 22px);
+  display: block;
+  background: #fff;
+  padding: 10px;
+}
+
+textarea.post-body {
+  height: 120px;
+  overflow: scroll;
+}
+
+.submit > button {
+  position: relative;
+  padding: 10px 20px;
+  color: #fff;
+  background: #0c0;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0 3px 0 0 #070;
+  border: 0;
+}
+
+.submit > button:hover {
+  background: #0b0;
+}
+
+.submit strong:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.input > input:focus,
+.input > textarea:focus {
+  border-color: #0c0;
 }
