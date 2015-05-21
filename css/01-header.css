@@ -124,7 +124,12 @@ nav.main-nav {
   position: relative;
 }
 
-.main-content:after {
+.main-content:after,
+.posts:after,
+.create-post:after,
+article.post:after,
+a.thumbnail:after,
+div.post-content > footer:after {
   content: "";
   display: block;
   clear: both;
@@ -157,7 +162,7 @@ nav.main-nav {
   padding: 20px;
 }
 
-footer {
+footer.main-footer {
   height: 56px;
   margin: 0 auto 0 auto;
   background: white;
@@ -369,6 +374,7 @@ a.name-tag {
   margin: 0 0 0 20px;
   float: left;
   padding: 19px;
+  margin-bottom: 20px;
 }
 
 .form-fieldset, input.post-title, textarea.post-body {
@@ -421,4 +427,56 @@ textarea.post-body {
 .input > input:focus,
 .input > textarea:focus {
   border-color: #0c0;
+}
+
+.post-content {
+  float: left;
+  width: 539px;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.post-footer-info-group,
+.post-footer-tools-group {
+  padding: 0;
+}
+
+.post-footer-info-group {
+  float: left;
+  color: #999;
+  font-size: 14px;
+}
+
+.post-footer-tools-group {
+  float: right;
+  color: black;
+}
+
+.post-footer-info-group > li,
+.post-footer-tools-group > li {
+  display: inline-block;
+}
+
+a.thumbnail {
+  display: inline-block;
+  float: left;
+}
+
+div.post-content > p {
+  margin-bottom: 20px;
+}
+
+ul.post-footer-info-group > li:nth-child(1):after,
+ul.post-footer-info-group > li:nth-child(2):after {
+  content: " · "
+}
+
+.post-footer-tools-group > li {
+  margin-left: 6px;
+}
+
+article.post {
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
 }
